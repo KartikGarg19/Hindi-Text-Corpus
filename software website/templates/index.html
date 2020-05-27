@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }} ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Sentimental Analysis Of Hindi Text</h1>
+            <span class="subheading">Analysis By Natural Language Processing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+
+
+          <a href="https://monkeylearn.com/sentiment-analysis/">
+            <h2 class="post-title">
+              What is Sentimental Analysis?
+            </h2>
+            <h3 class="post-subtitle">
+              Sentiment analysis is the interpretation and classification of emotions.
+            </h3>
+          </a>
+        </div>
+
+
+        <hr>
+
+
+        <div class="post-preview">
+          <a href="https://algorithmia.com/blog/introduction-natural-language-processing-nlp">
+            <h2 class="post-title">
+             What is NLP?
+            </h2>
+             <h3 class="post-subtitle">
+              The field of study that focuses on the interactions between human language and computers is called Natural Language Processing, or NLP for short
+            </h3>
+          </a>
+        </div>
+
+        <hr>
+
+
+        <div class="post-preview">
+          <a href="https://www.parsehub.com/blog/what-is-web-scraping/">
+            <h2 class="post-title">
+              What is Web Scraping?
+            </h2>
+            <h3 class="post-subtitle">
+             Web scraping is an automated method used to extract large amounts of data from websites.
+            </h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+

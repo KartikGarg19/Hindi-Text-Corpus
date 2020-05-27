@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static',filename='img/about-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Project</h1>
+            <span class="subheading">This is what we did.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>For sentimental Analysis of Hindi Text ,firstly we required a sufficiently
+        large dataset of reviews for Hindi Text ,as no dataset is available already 
+        for Hindi Text so we had to scrapped it from various websites.
+        These are some of the websites:-
+        </p>
+        <div class="Websites-Names">
+         1.<a href="https://www.jagran.com/entertainment/reviews-news-hindi.html">
+            Jagran.com
+          </a>
+          <hr>
+         2.<a href="https://navbharattimes.indiatimes.com/movie-masti/movie-review/articlelist/2325387.cms">
+            NavBharat Times.com
+          </a>
+          <hr>
+         3.<a href="https://hindi.filmibeat.com/reviews/">
+            Filmibeat.com
+          </a>
+          <hr>
+         4.<a href="https://aajtak.intoday.in/film-review.html">
+            Aajtak.com
+          </a>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
