@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Header -->
+<header class="bg-primary text-center py-5 mb-4">
+  <div class="container">
+    <br>
+    <h1 class="font-weight-light text-white">Group Members</h1><br>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/me.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Srijan Saini</h5>
+          <div class="card-text text-black-50">180001056</div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/kartik.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0"> Kartik Garg</h5>
+          <div class="card-text text-black-50">180002027</div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/bhalu.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Aryan Verma</h5>
+          <div class="card-text text-black-50">180001008</div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/tarun.jpg') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Tarun Gupta</h5>
+          <div class="card-text text-black-50">180001059</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+{% endblock %}
