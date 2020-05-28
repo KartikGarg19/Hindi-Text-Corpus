@@ -35,6 +35,6 @@ def prediction2():
 
 @app.route("/review")
 def review():
-    return render_template('review.html')
+    return render_template('movie search.html')
 
 app.run(debug=True)
