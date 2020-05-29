@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static',filename='img/about-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Movie Search</h1>
+            <span class="subheading">Search Top Movie Reviews in Hindi</span>
+            <section class="col-12 col-sn-6 col-md-3">
+                <form method="POST" class="form-container" action="">
+                  {{ form.hidden_tag() }}
+                  <fieldset class="form-group">
+                       <div>
+                           <!-- <label for="MovieNameInput"><h4>Input Movie Name</h4></label> -->
+                           {{ form.moviename.label(class="form-control-label") }}
+                           {{ form.moviename(class="form-control form-control-lg", id="MovieNameInput", placeholder="Enter Movie Name Here") }}
+                       </div>
+                  </fieldset>
+       
+                   <div class="form-group">
+                       {{ form.submit(class="btn btn-outline-primary btn-block") }}
+                   </div>
+                </form>
+       
+              </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>AajTak Movie Review
+        </p>
+        <p>{{info[2]}}</p>
+        <p>Ratings: {{info[3]}}</p>
+        <p>"{{info[1]}}"</p>
+        <p><a href={{info[0]}}>Full Review</p>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+
+
+
