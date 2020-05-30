@@ -1,0 +1,53 @@
+In Training Set:
+Positive Sentiment 1658
+Negative Sentiment 1342
+
+
+
+
+In Valid Set:
+Positive Sentiment 114
+Negative Sentiment 100
+
+
+
+
+<IPython.core.display.HTML object>               
+<IPython.core.display.HTML object>
+epoch     train_loss  valid_loss  accuracy  time    
+0         17.271521   #na#        02:35     9/308 02:32<05:22 15.8068]
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+epoch     train_loss  valid_loss  accuracy  time    
+0         6.521487    5.976491    0.203057  06:32                      
+epoch     train_loss  valid_loss  accuracy  time    
+0         25.491901   #na#        06:08     8/308 06:05<13:03 21.1969]
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+epoch     train_loss  valid_loss  accuracy  time    
+0         5.721917    5.811398    0.214121  08:26                      
+1         5.453672    5.664795    0.225854  08:27                      
+2         5.128445    5.570904    0.236015  07:44                      
+3         4.809556    5.575027    0.238898  07:51                      
+4         4.487263    5.595592    0.241101  07:50                      
+5         4.257703    5.637892    0.241867  07:52                      
+6         4.067140    5.677299    0.242294  07:48                      
+7         4.004462    5.692766    0.242333  07:47                      
+epoch     train_loss  valid_loss  accuracy  time    
+0         0.763978    #na#        01:16                              
+1         0.960496    #na#        01:19                              
+2         4.185910    #na#        00:11     46 00:08<02:07 2.6486]
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+epoch     train_loss  valid_loss  accuracy  time    
+0         0.680326    0.662578    0.598131  01:21                    
+epoch     train_loss  valid_loss  accuracy  time    
+0         0.592496    0.648193    0.630841  02:00                    
+epoch     train_loss  valid_loss  accuracy  time    
+0         0.622975    0.624480    0.630841  03:26                    
+epoch     train_loss  valid_loss  accuracy  time    
+0         0.550954    0.618523    0.668224  05:31                    
+1         0.511486    0.572290    0.696262  05:40                    
+2         0.437145    0.535526    0.747664  05:17                    
+3         0.330878    0.646595    0.710280  05:08                    
+4         0.228821    0.594953    0.728972  05:25                    
+5         0.165101    0.609072    0.757009  05:19                    
+6         0.126251    0.612628    0.747664  05:38                    
+7         0.105715    0.607440    0.752336  05:55 

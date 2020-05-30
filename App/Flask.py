@@ -36,6 +36,8 @@ def prediction2():
             output = PredictionModel(form.moviereview)
             pred = output[0]
             prob = output[1]
+            # pred = 1
+            # prob = 0.92
             if(pred == 1):
                 sentiment = "Positive"
             else:
