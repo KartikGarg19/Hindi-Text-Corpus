@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from forms import MovieInputForm, SearchForm
 from movieSearch import AajTak
-# import sys
-# sys.path.append('..')
-# import get_pred
-# from get_pred import PredictionModel
+import sys
+sys.path.append('..')
+import get_pred
+from get_pred import PredictionModel
 app= Flask(__name__)
 
 app.config['SECRET_KEY'] = '60cc08dd39658ff2bf4a9e3e45ec8b8f'
@@ -38,11 +38,11 @@ def prediction2():
             return render_template('prediction.html', title='Predict', form=form)
         else:
             movie_name = form.moviename.data
-            # output = PredictionModel(form.moviereview)
-            # pred = output[0]
-            # prob = output[1]
-            pred = 1
-            prob = 0.92
+            output = PredictionModel(form.moviereview)
+            pred = output[0]
+            prob = output[1]
+            # pred = 1
+            # prob = 0.92
             if(pred == 1):
                 sentiment = "Positive"
             else:
