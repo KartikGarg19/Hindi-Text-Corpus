@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Header -->
+<header class="bg-primary text-center py-5 mb-4">
+  <div class="container">
+    <br>
+    <h1 class="font-weight-light text-white">DataSet Analysis</h1><br>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/SentimentDistribution.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Pie Chart of Sentiment Distribution</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/ReviewLenDistribution.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0"> Review Length Plot</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/WordCountDistribution.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Word Count Plot</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 4 -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <img src="{{ url_for('static',filename='img/Heatmap.png') }}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">Heatmap</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-0 shadow">
+      <img src="{{ url_for('static',filename='img/CommonWordsWordCloud.png') }}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">Most common words Word Cloud</h5>
+      </div>
+    </div>
+  </div>
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-0 shadow">
+      <img src="{{ url_for('static',filename='img/FrequencyCommonWords.png') }}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">25 Most common words frequency</h5>
+      </div>
+    </div>
+  </div>
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-0 shadow">
+      <img src="{{ url_for('static',filename='img/FrequencyMostCommonWordsNegative.png') }}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">25 Most common words with negative sentiment frequency</h5>
+      </div>
+    </div>
+  </div>
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-0 shadow">
+      <img src="{{ url_for('static',filename='img/FrequencyMostCommonWordsPositive.png') }}" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title mb-0">25 Most common words with positive sentiment frequency</h5>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+{% endblock %}
