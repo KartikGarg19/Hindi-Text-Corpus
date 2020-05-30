@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from forms import MovieInputForm, SearchForm
 from movieSearch import AajTak
-import sys 
+import sys
 sys.path.append('..')
 import get_pred
 from get_pred import PredictionModel
